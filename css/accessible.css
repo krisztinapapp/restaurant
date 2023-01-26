@@ -1,0 +1,24 @@
+@import url('normal.css');
+
+body {
+    font-size:1.6em;
+}
+
+#float {
+    top: 0%;
+}
+
+footer, .parallax {
+    background-image: none;
+    background-color: darkslategrey;
+    opacity: 1;
+}
+
+footer p {
+    text-shadow: none;
+    color: #fff;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+}

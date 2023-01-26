@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>Menü - Étlap és Itallap</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normal.css" title="normal"/>
+	<link rel="alternate stylesheet" type="text/css" href="css/accessible.css" title="accessible"/>
+	<link rel="shortcut icon" href="img/shortcut.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<script src="scripts/styleswitcher.js"></script>
+</head>
+<body>
+<header>
+	<nav id="visually-impaired"><a id="big-font-size" href="#" onclick="setActiveStyleSheet('accessible'); return false;"><span class="icon"></span>Nagybetűs változat</a>
+		<a id="normal-style" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span>Normál változat</a>
+	</nav>
+	<h1 id="main-title">Metrópótló Étterem</h1>
+	<nav class="topnav" id="nav-menu">
+	    <ul>
+            <li><a href="index.html" id="logo"><img src="img/logo.png" alt="Éttermünk logója - Metró jel"></a></li>
+			<li><a href="index.html"><span class="active"></span>Főoldal</a></li>
+            <li><a href="menu.html" class="active"><span class="icon"></span>Menü</a></li>
+            <li><a href="gallery.html"><span class="icon"></span>Galéria</a></li>
+            <li><a href="form.html"><span class="icon"></span>Kapcsolat</a></li>
+	    </ul>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+</header>
+
+<main>
+<h2 class="menu">Étlap</h2>
+<aside class="menu" id="allergens">
+	<p>
+		<i class="fas fa-drumstick-bite"></i>
+		tartalmaz húst
+	</p>
+	<p>
+		<i class="fas fa-bread-slice"></i>
+		tartalmaz glutént
+	</p>
+	<p>
+		<i class="fas fa-seedling"></i>
+		vegán
+	</p>
+</aside>
+<ul class="menu" id="meals">
+	<li>
+		<h3>Hamburgerek</h3>
+		<aside style="font-size:0.8em;"><i>gluténmentes bucival is kérhető</i></aside>
+		<ul>
+			<li>
+				Klasszik hambi
+				<i class="fas fa-bread-slice"></i>
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				1990,-
+			</li>
+			<li>
+				Klasszik hambi e x t r a
+				<i class="fas fa-bread-slice"></i>
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				2190,-
+			</li>
+			<li>
+				Fullos hambi
+				<i class="fas fa-bread-slice"></i>
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				2490,-
+			</li>
+			<li>
+				Még fullosabb hambi
+				<i class="fas fa-bread-slice"></i>
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				2690,-
+			</li>
+			<li>
+				Camambert sajtos hambi
+				<i class="fas fa-bread-slice"></i>
+				<br>
+				2790,-
+			</li>
+			<li>
+				Vegán hambi
+				<i class="fas fa-seedling"></i>
+				<br>
+				2690,-
+			</li>
+		</ul>
+	</li>
+
+	<li>
+		<h3>Levesek</h3>
+		<ul>
+			<li>
+				Falusi húsleves
+				<i class="fas fa-drumstick-bite"></i>
+				<i class="fas fa-bread-slice"></i>
+				<br>
+				790,-
+			</li>
+			<li>
+				Magyaros gombaleves
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				890,-
+			</li>
+			<li>
+				Sajtkrémleves zsemlében
+				<i class="fas fa-bread-slice"></i>
+				<br>
+				1090,-
+			</li>
+			<li>
+				Hagymakrémleves
+				<i class="fas fa-seedling"></i>
+				<br>
+				990,-
+			</li>
+		</ul>
+	</li>
+	
+	<li>
+		<h3>Főételek</h3>
+		<ul>
+			<li>
+				Valami csirkés kajcsi
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				1890,-
+			</li>
+			<li>
+				Extrás kacsamell
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				2090,-
+			</li>
+			<li>
+				Még extrásabb nyami
+				<i class="fas fa-drumstick-bite"></i>
+				<i class="fas fa-bread-slice"></i>
+				<br>
+				2290,-
+			</li>
+			<li>
+				Disznóhusi
+				<i class="fas fa-drumstick-bite"></i>
+				<br>
+				2190,-
+			</li>
+			<li>
+				Vegáknak fini<i class="fas fa-seedling"></i><br>
+				1990,-
+			</li>
+			<li>
+				Saláta de ilyen jó<i class="fas fa-seedling"></i><br>
+				1790,-
+			</li>
+		</ul>
+	</li>
+
+	<li>
+		<h3>Desszertek</h3>
+		<ul>
+			<li>
+				Szuflé<br>
+				<i>többféle, a pincértől kérhetsz ajánlást</i><br>
+				890,-
+			</li>
+			<li>
+				Kézműves fagylalt<br>
+				<i>többféle, a pincértől kérhetsz ajánlást</i><br>
+				330,-/gömb
+			</li>
+			<li>
+				Klasszikus brownie karamellizált áfonyával
+				<i class="fas fa-seedling"></i>
+				<i class="fas fa-bread-slice"></i>
+				<br>
+				550,-
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<h2 class="menu">Itallap</h2>
+<ul class="menu" id="drinks">
+	<li>
+		<h3>Csapolt sörök</h3>
+		<ul>
+			<li>
+				Dreher<br>
+				350,-
+			</li>
+			<li>
+				Dreher Hidegkomlós<br>
+				450,-
+			</li>
+			<li>
+				Soproni<br>
+				350,-
+			</li>
+			<li>
+				Arany Ászok<br>
+				290,-
+			</li>
+			<li>
+				Házi kézműves sör<br>
+				690,-
+			</li>
+		</ul>
+	</li>
+
+	<li>
+		<h3>Borok</h3>
+		<ul>
+			<li>
+				Dankó vörös<br>
+				70,-/dl
+			</li>
+			<li>
+				La Fiesta rosé<br>
+				80,-/dl
+			</li>
+			<li>
+				La Fiesta fehér<br>
+				80,-/dl
+			</li>
+			<li>
+				Varga Merlot<br>
+				100,-/dl
+			</li>
+			<li>
+				Valami drága bor amit nagynénémtől kaptam<br>
+				190,-/dl
+			</li>
+		</ul>
+	</li>
+
+	<li>
+		<h3>Tüske</h3>
+		<ul>
+			<li>
+				Jagermeister<br>
+				200,-/3cl 400,-/5cl
+			</li>
+			<li>
+				Sierre tequila - gold, silver<br>
+				250,-/3cl 500,-/5cl
+			</li>
+			<li>
+				Házi pálinkák - dejó, eper, cigánymeggy<br>
+				290,-/3cl 550,-/5cl
+			</li>
+			<li>
+				Absolut vodka<br>
+				290,-/3cl 550,-/5cl
+			</li>
+		</ul>
+	</li>
+
+	<li>
+		<h3>Alkoholmentes löttyök</h3>
+		<ul>
+			<li>
+				Szóda<br>
+				30,-/dl
+			</li>
+			<li>
+				Coca Cola<br>
+				70,-/dl
+			</li>
+			<li>
+				Rostos üdítő - többféle<br>
+				60,-/dl
+			</li>
+		</ul>
+	</li>
+</ul>
+</main>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("nav-menu");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+</body>
+</html>

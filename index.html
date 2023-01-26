@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>Metrópótló Étterem - Főoldal</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normal.css" title="normal">
+	<link rel="alternate stylesheet" type="text/css" href="css/accessible.css" title="accessible">
+	<link rel="shortcut icon" href="img/shortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/styleswitcher.js"></script>
+</head>
+
+<body>
+<header>
+	<nav id="visually-impaired"><a id="big-font-size" href="#" onclick="setActiveStyleSheet('accessible'); return false;"><span class="icon"></span>Nagybetűs változat</a>
+	<a id="normal-style" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span>Normál változat</a>
+	</nav>
+	<nav class="topnav" id="nav-menu">
+	    <ul>
+            <li><a href="index.html" id="logo"><img src="img/logo.png" alt="Éttermünk logója - Metró jel"></a></li>
+            <li><a href="index.html" class="active"><span class="active"></span>Főoldal</a></li>
+            <li><a href="menu.html"><span class="icon"></span>Menü</a></li>
+            <li><a href="gallery.html"><span class="icon"></span>Galéria</a></li>
+            <li><a href="form.html"><span class="icon"></span>Kapcsolat</a></li>
+	    </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+	</nav>
+    <div class="box">
+        <h1 id="main-title">Metrópótló Étterem</h1>
+    </div>
+</header>
+
+<main>
+    <section id="main-intro">
+        
+        <div id="intro" class="parallax">
+            <div class="box">
+                <div id="float">
+                    <p>Ha már unod a hétköznapokat és kipróbálnál valami izgalmasat, mindezt elérhető helyen és áron, látogass el Budapest egyik legújabb és legvagányabb éttermébe - garantáltan le leszel nyűgözve nálunk!</p>
+                </div>
+            </div>
+        </div>
+    
+        <article id="about">
+            <div class="box">
+                <h2>Rólunk</h2>
+                <p>Egyszer volt, hol nem volt, három unalommal, lelkesedéssel és energiával teli fiatalember úgy
+                    döntött, kitalál valami észvesztően innovatív dolgot, és meghódítják vele a világot.
+                    Ez a terv sajnos nem jött össze, helyette csak egy étteremmel álltak elő. De mint az később kiderült a nagyközönség számára, ez nem csak egy átlagos étterem...
+                    A Metrópótló Étterem projekt megvalósításához rengeteg munka, átvirrasztott éjszaka, száz el
+                    nem mondott szó, végtelen baráti szeretet és kreatív energia járult hozzá. A design, az ételek, az
+                    italok, az online imidzs - ezek mind-mind a három alapító tag kreatív munkájának gyümölcse.
+                    És hogy mi a küldetésünk? Az, hogy mindenki, aki hozzánk hasonlóan szereti az újdonságokat,
+                    az ízlelőbimbókat zavarba ejtő ételeket és a hangulatos aurával rendelkező éttermeket és bárokat,
+                    a mi kis birodalmunkban egy olyan helyre leljen, ahova szívesen visszatér bármikor, amikor kicsit ki szeretne szakadni a hétköznapokból.</p>
+                <p>A névválasztást pedig az egyik kedvenc dalunk ihlette. Íme: <a href="https://www.youtube.com/watch?v=40NNUf8oAMM" target="_blank">Kaukázus - Kalifornia</a></p>
+                <p>Nézd csak, milyen profin és odaadóan dolgoznak szakácsaink azon, hogy a lehető legminőségibb étel kerüljön eléd:</p>
+                <div id="video">
+                    <video poster="img/poster.jpg" controls>
+                        <source src="video/our_chefs.mp4" type="video/mp4">
+                        A videót nem lehet lejátszani.
+                    </video>
+                    <p id="video-description"><a href="video.html" target="_blank">Videó leírása</a> (megnyitás új lapon)</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="weekly-offer" class="box">
+        <h2>Heti ajánlatunk</h2>
+        <div id="offer">
+            <figure>
+                <img src="img/taco.jpg" alt="Taco menü, szószokkal és üdítővel">
+                <figcaption>Egyik kedvencünk: Taco menü</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div id="opening-hours" class="box">
+        <table>
+            <caption>
+                <strong>Nyitvatartás</strong>
+                <details class="hidden">
+                <summary>Nyitvatartás</summary>
+                <p>A táblázat két oszlopból áll (nap, idő), a sorokban pedig a nyitvatartási idők olvashatók, napra lebontva (hétköznap, szombat, vasárnap).</p>
+                </details>
+            </caption>
+                
+            <tr class="hidden">
+                <th>Nap</th>
+                <th>Idő</th>
+            </tr>
+            <tr>
+                <td>Hétfő-Csütörtök</td>
+                <td>12:00-21:00</td>
+            </tr>
+            <tr>
+                <td>Péntek-Szombat</td>
+                <td>11:00-01:00</td>
+            </tr>
+            <tr>
+                <td>Vasárnap</td>
+                <td>12:00-23:00</td>
+            </tr>
+        </table>
+    </div>
+    <div id="links" class="box">
+        <h2>Linkek</h2>
+        <p class="main-link"><a href="menu.html" target="_blank">Csekkold le az étlapunk, itallapunk >></a></p>
+        <p class="main-link"><a href="gallery.html" target="_blank">Itt megnézheted a csodás képeinket >></a></p>
+        <p class="main-link"><a href="form.html" target="_blank">Ha ellátogatnál hozzánk, itt foglalhatsz >></a></p>
+    </div>
+</footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("nav-menu");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+</body>
+</html>

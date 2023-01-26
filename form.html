@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>Kapcsolat - Asztalfoglalás</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normal.css" title="normal">
+	<link rel="alternate stylesheet" type="text/css" href="css/accessible.css" title="accessible">
+    <link rel="shortcut icon" href="img/shortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/styleswitcher.js"></script>
+</head>
+<body>
+<header>
+    <nav id="visually-impaired"><a id="big-font-size" href="#" onclick="setActiveStyleSheet('accessible'); return false;"><span class="icon"></span>Nagybetűs változat</a>
+    <a id="normal-style" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span>Normál változat</a>
+    </nav>
+    <nav class="topnav" id="nav-menu">
+        <ul>
+            <li><a href="index.html" id="logo"><img src="img/logo.png" alt="Éttermünk logója - Metró jel"></a></li>
+            <li><a href="index.html"><span class="active"></span>Főoldal</a></li>
+            <li><a href="menu.html"><span class="icon"></span>Menü</a></li>
+            <li><a href="gallery.html"><span class="icon"></span>Galéria</a></li>
+            <li><a href="form.html" class="active"><span class="icon"></span>Kapcsolat</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <div class="box">
+		<h1 id="main-title">Metrópótló Étterem</h1>
+	</div>
+</header>
+
+<main>
+    <section id="contact">
+        <div class="box">
+            <h2>Elérhetőségeink:</h2>
+        
+            <p class="contact-info">Címünk: 1000, Budapest, Legjobb u. 64-66.</p>
+            <p class="contact-info">Tel: 06 62 666 666</p>
+            <p class="contact-info"><span lang="en">Email</span>: metropotlo@etterem.hu</p>
+            <p class="contact-info"><span lang="en">Facebook</span>: <a href="https://www.facebook.com/" target="_blank">Metrópótló Étterem</a></p>
+            <p class="contact-info">Instagram: <a href="https://www.instagram.com" target="_blank">@metropotlo</a></p>
+                    
+            <p>Alig várjuk, hogy halljunk felőled! :)</p>
+        </div>
+    </section>
+    
+    <section id="reserve" class="box">
+        <h2>Asztalfoglalás:</h2>
+    
+        <form id="reservation" action="mailto:metropotlo@etterem.hu" method="post">
+        <fieldset id="form-basics">
+        <legend>Adataid</legend>
+            <label for="name">Hogy szólíthatunk?</label><br>
+            <input type="text" id="name" maxlength="30" required><br>
+
+            <label for="email">Email címed:</label><br>
+            <input type="email" id="email" maxlength="30" required><br>
+
+            <label for="phone">Telefonszámod:</label><br>
+            <input type="text" id="phone" maxlength="16" required><br>
+
+            <label for="people">Hány főre szeretnél foglalni?</label><br>
+            <input type="number" id="people" required><br>
+
+            <label for="time">Mikor jönnél/jönnétek?</label><br>
+            <input type="date" id="time" required><br>
+        </fieldset>
+
+        <fieldset id="form-pref">
+        <legend>Hol ülnél/ülnétek legszívesebben?</legend>
+            <input type="radio" name="r1" value="r11">pult közelében (nincs rosszabb a szomjazásnál)<br>
+            <input type="radio" name="r1" value="r12">teraszon (nincs jobb a friss levegőnél)<br>
+            <input type="radio" name="r1" value="r13" checked>nincs preferenciám (a jókedv akkor is garantált!)<br>
+        </fieldset>
+
+        <fieldset id="form-other">
+        <legend>Más</legend>
+            <label for="other">Egyéb óhaj-sóhaj, megjegyzés, kedvenc vicced, vagy bármi, amit megosztanál velünk:<br></label>
+            <textarea id="other" name="other" rows="5" cols="40" placeholder="ide írhatod..."></textarea>
+        </fieldset>
+        
+        <fieldset id="form-input">
+        <legend>Foglalás</legend>
+            <input type="checkbox" required>
+            <label>Elfogadom az adatkezelési szabályokat.</label><br>
+            <input type="submit" value="Foglalok" class="button" id="submit-button">
+            <input type="reset" value="Sztornó" class="button" id="reset-button">
+        </fieldset>
+        </form>
+
+        <p>Alig várjuk, hogy találkozzunk! :)</p>
+    </section>
+</main>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("nav-menu");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+</body>
+</html>

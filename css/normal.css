@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital@0;1&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    font-family: 'Italiana', serif;
+    text-align: center;
+    line-height: 200%;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+a:link {
+    color:darkmagenta;
+}
+
+a:visited {
+    color:darkorchid;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/*
+footer {
+    background-color: #000;
+}
+*/
+
+.box {
+    margin: 0 0 0 180px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ----------------------------------------------------------- */
+
+/* NAVIGATION */
+#nav-menu {
+	position: fixed;
+    top: 0;
+	font-size: 20px;
+    z-index: 1;
+}
+
+#nav-menu ul {
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0;
+    width: 140px;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    overflow: auto;
+}
+
+#nav-menu li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+#nav-menu li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav-menu a {
+	opacity:0.7;
+}
+
+#logo {
+    opacity: 1 !important;
+}
+
+#logo img {
+    height: 60px;
+}
+
+.active {
+    
+    opacity:1 !important;
+}
+
+#nav-menu a:hover {
+	opacity:1;
+}
+
+#visually-impaired {
+    text-align: right;
+}
+
+.icon {
+    color: #000;
+}
+
+/* ----------------------------------------------------------- */
+
+/* MAIN PAGE */
+
+/* INTRO */
+.parallax {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/elokep.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
+    width: 100%;
+	height: 500px;
+    position: relative;
+}
+
+#float {
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    position: absolute;
+    top: 20%;
+    font-size: 1.2em;
+    line-height: 200%;
+}
+
+#float p {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    opacity: 1 !important;
+}
+
+/* ABOUT */
+#video p {
+    text-align: center;
+}
+
+#video video {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* WEEKLY OFFER */
+
+#offer {
+    margin:auto;
+}
+
+#offer figure {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#offer img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* FOOTER */
+
+footer {
+    height: fit-content;
+    background-color:darkslategrey;
+    background-image:  url("../img/teruljterulj.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.7;
+    color:#fff;
+    line-height: 200%;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer p {
+    text-shadow: 1px 1px #fff;
+}
+
+#links h2 {
+    text-align: left;
+}
+
+#opening-hours, footer h2 {
+    text-shadow: 2px 2px #000;
+}
+
+#opening-hours table, th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* ----------------------------------------------------------- */
+
+/* MENU PAGE */
+
+.menu {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#allergens {
+    width: 200px;
+    margin:auto;
+    border: 1px solid #000;
+    font-size:0.8em;
+}
+
+/* ----------------------------------------------------------- */
+
+/* FORM PAGE */
+
+#contact h2, #reserve h2 {
+    text-align: left;
+}
+
+#contact, #reserve {
+    line-height: 200%;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ----------------------------------------------------------- */
+
+/* RESPONSIVITY */
+
+@media screen and (max-width:567px) {
+    .gallery img {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:568px) and (max-width:1200px)  {
+    .gallery img {
+		display: inline;
+		width: 49%;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+    .gallery img {
+		display: inline;
+        width: 32%;
+	}
+}
+
+@media screen and (min-width: 901px) {
+    .topnav a.icon {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topnav ul {
+        display: none;
+    }
+    .topnav a.icon {
+        float: left;
+        display: block;
+        color: #000;
+        padding: 5px;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color:#fff;
+    }
+    .topnav.responsive ul {
+      float: none;
+      display: block;
+      margin: 0 !important;
+      width: 100px !important;
+      font-size: 15px;
+    }
+    .topnav.responsive img {
+        display: none;
+    }
+    .box {
+        margin: 0;
+    }
+    #boxes div {
+        display: block;
+        width: 100%;
+    }
+}

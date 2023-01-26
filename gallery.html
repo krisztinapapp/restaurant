@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="hu" xml:lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Galéria</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/normal.css" title="normal"/>
+	<link rel="alternate stylesheet" type="text/css" href="css/accessible.css" title="accessible"/>
+	<link rel="shortcut icon" href="img/shortcut.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="scripts/styleswitcher.js"></script>
+</head>
+
+<body>
+	<div id="visually-impaired"><a id="big-font-size" href="#" onclick="setActiveStyleSheet('accessible'); return false;"><span class="icon"></span>Nagybetűs változat</a>
+		<a id="normal-style" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span>Normál változat</a>
+	</div>
+	<div class="topnav" id="nav-menu">
+		<ul>
+			<li><a href="index.html" id="logo"><img src="img/logo.png" alt="Éttermünk logója - Metró jel"/></a></li>
+			<li><a href="index.html"><span class="active"></span>Főoldal</a></li>
+			<li><a href="menu.html"><span class="icon"></span>Menü</a></li>
+			<li><a href="gallery.html" class="active"><span class="icon"></span>Galéria</a></li>
+			<li><a href="form.html"><span class="icon"></span>Kapcsolat</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+	</div>
+
+	<div class="box">
+		<h1 id="main-title">Metrópótló Étterem</h1>
+	</div>
+
+	<div id="gallery-main" class="box gallery">
+		<h2>Kedvcsináló képeink</h2>
+
+		<img src="img/etterem.jpg" alt="Az étterem belseje"/>
+		<img src="img/barpult.jpg" alt="Vendégek a bárpultnál"/>
+		<img src="img/terites.jpg" alt="Terített asztal"/>
+		<img src="img/taco.jpg" alt="Taco menü, szószokkal és üdítővel"/>
+		<img src="img/sajttorta.jpg" alt="Ribizlis sajttorta"/>
+		<img src="img/csapolt.jpg" alt="Kézműves csapolt sörünk"/>
+		
+		<p>Ha kedvet kaptál, hogy ellátogass hozzánk, ezen az oldalon tudsz foglalni asztalt: <a href="form.html">katt ide</a> :)</p>
+	</div>
+
+<script type="text/javascript">
+	function myFunction() {
+		var x = document.getElementById("nav-menu");
+		if (x.className === "topnav") {
+		x.className += " responsive";
+		} else {
+		x.className = "topnav";
+		}
+	}
+</script>
+
+</body>
+
+</html>
